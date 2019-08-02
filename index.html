@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- header starts -->
+        <header class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/">
+                            <img src="img/logo.svg" alt="Solar Quote Today" class="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-6 header-copy text-right">
+                        <span class="d-none d-md-block">Get Your Free Quote Today</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header ends -->
+
+        <!-- .hero-area starts -->
+        <section class="hero-area" style="background-image: url(img/house.jpg)">
+            <div class="container">
+                <h1>Get a quote today from the UK's leading solar panel suppliers.</h1>
+                <div id="rootwizard" class="form-container">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-electric" role="tab">Electricity</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-homeowner" role="tab">Homeowner</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-solarinstalled" role="tab">Solar Installed</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-listedbuilding" role="tab">Listed Building</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-solarbattery" role="tab">Solar Battery</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-postcode" role="tab">Postcode</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-search" role="tab">Searching</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-address" role="tab">Address</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-namephone" role="tab">Name/Phone</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-thanks" role="tab">Thanks</a></li>
+                    </ul>
+        
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+        
+                    <form action="/" id="Test" method="post"><input id="Referrer" name="Referrer" type="hidden" value="https://www.solarquotetoday.co.uk/" /><input id="Link" name="Link" type="hidden" value="" />               
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab-electric" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <p>What is your average monthly electricity bill?</p>
+                                    <div class="form">
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="spend1" name="ElectricitySpend" type="radio" value="0 - £34" />
+                                            <label class="form-check-label" for="spend1">0 - £34</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="spend2" name="ElectricitySpend" type="radio" value="£35 - £49" />
+                                            <label class="form-check-label" for="spend2">£35 - £49</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="spend3" name="ElectricitySpend" type="radio" value="£50 - £69" />
+                                            <label class="form-check-label" for="spend3">£50 - £69</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="spend4" name="ElectricitySpend" type="radio" value="£70+" />
+                                            <label class="form-check-label" for="spend4">£70+</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-homeowner" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <p>Are you a homeowner?</p>
+                                    <div class="form">
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="homeowner1" name="Homeowner" type="radio" value="Yes" />
+                                            <label class="form-check-label" for="homeowner1">Yes</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="homeowner2" name="Homeowner" type="radio" value="No" />
+                                            <label class="form-check-label" for="homeowner2">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-solarinstalled" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <p>Do you already have solar panels installed?</p>
+                                    <div class="form">
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="solarinstalled1" name="SolarInstalled" type="radio" value="Yes" />
+                                            <label class="form-check-label" for="solarinstalled1">Yes</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="solarinstalled2" name="SolarInstalled" type="radio" value="No" />
+                                            <label class="form-check-label" for="solarinstalled2">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-listedbuilding" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <p>Do you live in a conservation area or listed building?</p>
+                                    <div class="form">
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="listed1" name="ConservationListed" type="radio" value="Yes" />
+                                            <label class="form-check-label" for="listed1">Yes</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="listed2" name="ConservationListed" type="radio" value="No" />
+                                            <label class="form-check-label" for="listed2">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-solarbattery" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <p>Are you interested in a solar battery system?</p>
+                                    <div class="form">
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="battery1" name="SolarBattery" type="radio" value="Yes" />
+                                            <label class="form-check-label" for="battery1">Yes</label>
+                                        </div>
+                                        <div class="form-check radio abc-radio abc-radio-success">
+                                            <input id="battery2" name="SolarBattery" type="radio" value="No" />
+                                            <label class="form-check-label" for="battery2">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-postcode" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <div class="form-group mt-1 mb-5">
+                                        <label for="Postcode">Postcode</label>
+                                        <div class="scrollable-dropdown-menu">
+                                            <input class="form-control data-hj-whitelist" id="Postcode" name="Postcode" placeholder="AB1 2BA" type="text" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-search" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <p class="text-center">Hold on - we're finding an installer in your area that meet your needs</p>
+                                    <p class="text-center">
+                                        <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw text-warning"></i>
+                                        <span class="sr-only">Searching...</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-address" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <div class="alert alert-success text-center">
+                                        Good news, we've found an installer for you. Fill in the last few details to start your free no obligation quote.
+                                    </div>
+                                    <div class="form-group mt-1 mb-5">
+                                        <label for="Address1">First line of address</label>
+                                        <div class="address-placeholder">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="tab-namephone" role="tabpanel">
+                                <div class="animated slideInRight">
+                                    <div class="form-group">
+                                        <label for="Title">Title</label>
+                                        <select class="form-control" id="Title" name="Title">
+                                            <option value="">Select</option>
+                                            <option value="Mr">Mr</option>
+                                            <option value="Mrs">Mrs</option>
+                                            <option value="Miss">Miss</option>
+                                            <option value="Ms">Ms</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Fullname">Full name</label>
+                                        <input class="form-control data-hj-whitelist" id="Fullname" name="Fullname" placeholder="" type="text" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Telephone">Telephone number</label>
+                                        <input class="form-control data-hj-whitelist numeric" id="Telephone" name="Telephone" placeholder="" type="text" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-thanks" role="tabpanel">
+                                <div class="animated slideInRight text-center">
+                                    <h3>Thank you for your submission!</h3>
+                                    <p>What happens next?</p>
+                                    <p>You have been matched with a trusted Solar advisor from one the following companies Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.</p>
+                                    <p>An expert will now contact you shortly via telephone to discuss your individual needs and concerns, and provide you with tailored quote.</p>
+                                    <p><i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a href="/terms-and-conditions">Privacy Policy</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>            
+                    <div id="messageBox1" class="alert alert-danger" style="display: none; position: inherit;">
+                        <ul></ul>
+                    </div>
+        
+                    <div class="actions">
+                        <a href="#" class="btn btn-success mb-3">
+                            Compare Prices
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </a>
+                        <p id="consent" class="mt-5 mb-3 text-muted" style="font-size: 11px; display: none;">
+                            Your Privacy is important to us. By submitting this form, you consent to Lead Insight Ltd and one of the following companies,
+                            Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.
+                            contacting you by Telephone, Email and/or Post with details of solar panel installation and quotes for such products, and/or to confirm your product requirements.
+                            You have certain rights in relation to your personal data including the right to direct marketing.
+                        </p>
+                        <small><a href="#" class="previous">Previous</a></small>
+                        <div class="secure">
+                            <i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a href="#" class="js-privacy-modal">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .hero-area ends -->
+
+        <!-- .pods-area starts -->
+        <section class="pods-area">
+            <div class="container">
+                <h2 class="text-center">The Benefits of Solar Panels</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-pod">
+                            <div class="pod-icon"><i class="fa fa-line-chart fa-5x"></i></div>
+                            <h3>Energy costs are constantly rising</h3>
+                            <p>The UK's energy bills rising at fastest rate since 2014.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-pod">
+                            <div class="pod-icon"><i class="fa fa-gbp fa-5x"></i></div>
+                            <h3>Money Saving</h3>
+                            <p>Store the energy to use when needed and get paid for any unused energy to maximize savings.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-pod">
+                            <div class="pod-icon"><i class="fa fa-thumbs-o-up fa-5x"></i></div>
+                            <h3>Good for the enviroment</h3>
+                            <p>Fit and forget with a low cost and high carbon benefit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .pods-area ends -->
+
+        <!-- .cta starts -->
+        <section class="cta-area" style="background-image: url(img/timer.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>It’s quick and simple. Our quotes are free and you’re under no obligation.</h3>
+                        <a href="#rootwizard" class="boxed-btn">Start Quote Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .cta ends -->
+
+        <!-- .footer-area starts -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <nav>
+                            <a href="/">Home</a>
+                            <a href="/terms-and-conditions">Terms, Conditions and Privacy</a>
+                        </nav>
+                        <small>
+                            By submitting your details onto the site you will be contacted by telephone, email, sms or post by one of the following partners;<br />
+                            Lead Insight Ltd, Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.
+                            <br /><br />
+                            Solar Quote Today is a trading style of Lead Insight Ltd, trading at The Square (G11), Basing View, Basingstoke, Hampshire, RG21 4EB. Email:
+                            info@leadinsight.co.uk. Company Registration Number 09368839.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- .footer-area ends -->
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

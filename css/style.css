@@ -1,0 +1,505 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+}
+a:hover { text-decoration: none }
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+    
+}
+input[type=submit], button[type=submit] , button[type=button]{
+    cursor: pointer;
+}
+.boxed-btn {
+    color: #fff;
+    border: 2px solid #fff;
+    background: rgba(0,0,0,.21);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    font-weight: 700;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.boxed-btn:hover{
+    color: #fff;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0057a7;
+    border-color: #0057a7;
+    padding: .5rem 1rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #004381;
+    border-color: #003c74;
+}
+input[type="submit"]:hover, button[type="submit"]:hover {
+   
+}
+
+
+select {
+    font-size: 19px;
+    color: #0da0f4;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 8px 10px;
+}
+select {outline: none }
+
+
+/* =======.header-area========== */
+.header-area {
+    border-bottom: #eee 1px solid;
+    padding: 25px 0;
+}
+.header-area .logo {
+    width: 280px;
+    margin: 0;
+    float: left;
+}
+.header-copy {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* =======.hero-area======= */
+.hero-area{
+    background-color: #333;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+    z-index: 2;
+}
+.hero-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: "";
+    z-index: -1;
+    opacity: .4;
+}
+.hero-area h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.5rem;
+    max-width: 850px;
+    margin: 0 auto 30px;
+    text-align: center;
+    line-height: 1.4;
+    color: #fff;
+}
+
+/* =====form======== */
+.form-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 0 7px 51px 0 rgba(0,0,0,.51);
+    -moz-box-shadow: 0 7px 51px 0 rgba(0,0,0,.51);
+    box-shadow: 0 7px 51px 0 rgba(0,0,0,.51);
+    max-width: 700px;
+    margin: 0 auto;
+}
+#rootwizard .nav.nav-tabs {
+    display: none;
+}
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0057a7;
+}
+.form-container .progress {
+    height: 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+#rootwizard .form-check.radio, #rootwizard .form-check.checkbox {
+    border-radius: .25rem;
+    border: 1px solid #dddfe2;
+    transition: background-color .15s ease-in-out;
+}
+.abc-radio {
+    padding-left: 20px;
+}
+.form-check {
+    position: relative;
+    display: block;
+    margin-bottom: .5rem;
+}
+#rootwizard .form-check.radio input, #rootwizard .form-check.checkbox input {
+    position: absolute;
+}
+.abc-radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+#rootwizard .form-check.radio label, #rootwizard .form-check.checkbox label {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding: 10px 0 5px 0;
+}
+.abc-radio label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+}
+#rootwizard .form-check.radio label:before, #rootwizard .form-check.checkbox label:before {
+    margin-left: -30px;
+}
+.abc-radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.abc-radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #55595c;
+    transform: scale(0,0);
+    transition: transform .1s cubic-bezier(.8,-.33,.2,1.33);
+}
+.abc-radio-success input[type="radio"]+label::after {
+    background-color: #5cb85c;
+}
+#rootwizard .form-check.radio label:after, #rootwizard .form-check.checkbox label:after {
+    top: 13px;
+    left: -7px;
+}
+#rootwizard .form-check.radio:hover, #rootwizard .form-check.checkbox:hover {
+    background-color: #e7e8ea;
+}
+#rootwizard .form-check.radio label:hover, #rootwizard .form-check.checkbox label:hover {
+    cursor: pointer;
+}
+
+#messageBox1 {
+    margin-bottom: -1.5rem;
+    font-size: 1rem;
+}
+#messageBox1 ul {
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+#rootwizard .actions {
+    padding-top: 20px;
+}
+.form-container .btn {
+    display: block;
+    padding: 1rem 1.2rem;
+    margin: 40px auto 10px;
+}
+.form-container .secure {
+    color: #868e96;
+    text-align: center;
+    font-size: .7rem;
+    padding: 40px 0;
+}
+.form-container .secure a {
+    text-decoration: underline;
+}
+.actions .previous, .secure a {
+    color: #0057a7;
+}
+.actions .previous:hover, .secure a:hover {
+    color: #28a745;
+}
+
+
+
+/* ======.pods-area======== */
+.pods-area {
+    padding: 70px 0;
+    color: #8ac9f9;
+    background: #2196f3;
+    text-align: center;
+    font-family: 'Comfortaa',cursive;
+}
+.pods-area h2 {
+    font-size: 1.8rem;
+    position: relative;
+    margin: 0 0 50px;
+    color: #fff;
+}
+.pods-area h2:after {
+    content: '';
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    width: 45%;
+    border: 1px solid #6ab8f7;
+    transform: translateX(-50%);
+}
+.pod-icon {
+    color: #8ac9f9;
+    margin-bottom: 15px;
+}
+.single-pod {
+    padding: 0 30px;
+}
+.single-pod h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* ======cta-area====== */
+.cta-area{
+    padding: 60px 0 80px;
+    background-size: cover;
+    background-position: top center;
+    padding: 60px 0 80px;
+    text-align: center;
+    font-family: 'Comfortaa',cursive;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.cta-area h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.cta-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d47a1;
+    content: "";
+    z-index: -1;
+    opacity: .8;
+}
+
+/* ======footer-area======== */
+.footer-area {
+    border-top: #eee 1px solid;
+    padding: 15px 0;
+    text-align: center;
+}
+.footer-area nav {
+    margin: 0 0 10px;
+}
+.footer-area nav a:first-child {
+    border-left: none;
+}
+.footer-area nav a {
+    color: #333;
+    font-size: .9rem;
+    display: inline;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #ccc;
+    padding: 0 7px;
+}
+.footer-area nav a:hover{
+    text-decoration: underline;
+}
+.footer-area small {
+    width: 80%;
+    font-size: .7rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----------------------------------- 
+         Articles Page CSS
+-------------------------------------*/
+.header-area .btn-primary {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 4px 12px;
+}
+.header-area .ad-text {
+    color: #aaa;
+    font-size: 11px;
+    text-align: center;
+    margin-top: -15px;
+}
+.main-content {
+    padding: 40px 0 60px;
+    background: #fff;
+}
+.article-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.article-title a {
+    color: #333;
+}
+.article-title:hover a {
+    text-decoration: underline;
+}
+.article-date {
+    border-top: #eee 1px solid;
+    padding: 10px 0;
+    font-size: .8rem;
+    color: #969696;
+}
+.img-caption {
+    border-bottom: #eee 1px solid;
+    position: relative;
+    padding: 10px 0 10px 20px;
+    font-size: .9rem;
+    color: #969696;
+    margin: 0 0 15px;
+}
+.img-caption i {
+    position: absolute;
+    left: 0;
+    top: 13px;
+}
+.main-content ol {
+    padding: 0;
+    list-style-type: none;
+    counter-reset: num;
+}
+.main-content ol li {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 6px;
+    line-height: 27px;
+}
+.main-content ol li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-color: #0057a7;
+    content: counter(num);
+    counter-increment: num;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.age-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 30px;
+}
+.age-list a {
+    width: 50px;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #fff;
+    background: #ff8f00;
+    border: 1px solid #e68100;
+    padding: 4px;
+    margin: 0 4px 8px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16);
+}
+.age-list a:hover, .age-list a:focus {
+    background: #ffbc66;
+    text-decoration: underline;
+}
+.claim-check-pod {
+    max-width: 450px;
+    margin: 60px auto;
+    text-align: center;
+}
+.claim-check-pod h3 {
+    font-weight: 700;
+    color: #43a047;
+    margin: 0 0 30px;
+}
+.map-container {
+    margin: 0 0 30px;
+}
+.map-box {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 20px;
+    color: #43a047;
+    border: 3px solid #66bb6a;
+    margin: 0 0 40px;
+}
+.article-footer  {
+    border-top: #eee 1px solid;
+    padding: 10px 0 0;
+}
+.article-footer img {
+    width: 60px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+.article-footer span {
+    color: #969696;
+    font-style: italic;
+}
