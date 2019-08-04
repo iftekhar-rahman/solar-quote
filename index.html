@@ -12,7 +12,7 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <!--Plugins-->
-        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
 
         <!--Theme specific styles-->
         <link href="css/style.css" rel="stylesheet">
@@ -47,7 +47,7 @@
         <!-- header ends -->
 
         <!-- .hero-area starts -->
-        <section class="hero-area" style="background-image: url(img/house.jpg)">
+        <section class="hero-area hero-bg">
             <div class="container">
                 <h1>Get a quote today from the UK's leading solar panel suppliers.</h1>
                 <div id="rootwizard" class="form-container">
@@ -65,18 +65,18 @@
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-thanks" role="tab">Thanks</a></li>
                     </ul>
         
-                    <div class="progress">
+                    <div class="progress tab-progress">
                         <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
         
                     <form action="/" id="Test" method="post"><input id="Referrer" name="Referrer" type="hidden" value="https://www.solarquotetoday.co.uk/" /><input id="Link" name="Link" type="hidden" value="" />               
-                        <div class="tab-content">
+                        <div class="tab-content" id="step-form">
                             <div class="tab-pane active" id="tab-electric" role="tabpanel">
                                 <div class="animated slideInRight">
                                     <p>What is your average monthly electricity bill?</p>
                                     <div class="form">
                                         <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="spend1" name="ElectricitySpend" type="radio" value="0 - £34" />
+                                            <input id="spend1" name="ElectricitySpend" type="radio" value="0 - £34" checked/>
                                             <label class="form-check-label" for="spend1">0 - £34</label>
                                         </div>
                                         <div class="form-check radio abc-radio abc-radio-success">
@@ -224,7 +224,7 @@
                     </div>
         
                     <div class="actions">
-                        <a href="#" class="btn btn-success mb-3">
+                        <a href="#" class="btn btn-success mb-3 next-btn">
                             Compare Prices
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </a>
@@ -234,7 +234,7 @@
                             contacting you by Telephone, Email and/or Post with details of solar panel installation and quotes for such products, and/or to confirm your product requirements.
                             You have certain rights in relation to your personal data including the right to direct marketing.
                         </p>
-                        <small><a href="#" class="previous">Previous</a></small>
+                        <small><span class="previous">Previous</span></small>
                         <div class="secure">
                             <i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a href="#" class="js-privacy-modal">Privacy Policy</a>
                         </div>
@@ -314,7 +314,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>       
 
         <!--Plugins-->
-        <script src="js/owl.carousel.min.js"></script>
+        <!-- <script src="js/owl.carousel.min.js"></script> -->
 
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>

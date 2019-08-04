@@ -105,6 +105,7 @@ select {outline: none }
 }
 
 /* =======.hero-area======= */
+.hero-bg{background-image: url(../img/house.jpg)}
 .hero-area{
     background-color: #333;
     background-position: top center;
@@ -145,6 +146,7 @@ select {outline: none }
     box-shadow: 0 7px 51px 0 rgba(0,0,0,.51);
     max-width: 700px;
     margin: 0 auto;
+    overflow: hidden;
 }
 #rootwizard .nav.nav-tabs {
     display: none;
@@ -159,15 +161,27 @@ select {outline: none }
     color: #fff;
     background-color: #0057a7;
 }
+
 .form-container .progress {
-    height: 20px;
-    margin-bottom: 1rem;
     display: flex;
     overflow: hidden;
     font-size: .75rem;
     background-color: #e9ecef;
     border-radius: .25rem;
 }
+#rootwizard .progress {
+    height: 20px;
+    margin-bottom: 1rem;
+}
+#rootwizard .progress .progress-bar {
+    width: 0%;
+    transition: width .6s ease;
+}
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+
 #rootwizard .form-check.radio, #rootwizard .form-check.checkbox {
     border-radius: .25rem;
     border: 1px solid #dddfe2;
@@ -229,6 +243,8 @@ select {outline: none }
     transform: scale(0,0);
     transition: transform .1s cubic-bezier(.8,-.33,.2,1.33);
 }
+
+
 .abc-radio-success input[type="radio"]+label::after {
     background-color: #5cb85c;
 }
@@ -241,6 +257,10 @@ select {outline: none }
 }
 #rootwizard .form-check.radio label:hover, #rootwizard .form-check.checkbox label:hover {
     cursor: pointer;
+}
+.abc-radio-success input[type="radio"]:checked+label::before {
+    border-color: #5cb85c;
+    background-color: #5cb85c;
 }
 
 #messageBox1 {
@@ -274,7 +294,9 @@ select {outline: none }
 .actions .previous:hover, .secure a:hover {
     color: #28a745;
 }
-
+.previous{
+    cursor: pointer;
+}
 
 
 /* ======.pods-area======== */
