@@ -108,12 +108,64 @@
 .cta-bg{
     background: #0d47a1 url(../img/cta-large.jpg) top center no-repeat;
 }
+.cta a:hover{
+  color: #fff;
+}
 
 header.main .logo {
     width: 200px;
     margin: 0 auto;
     display: block;
     float: none;
+}
+.modal-header .close {
+    cursor: pointer;
+}
+.article-title a:hover {
+  text-decoration: underline;
+}
+.header-copy .btn {
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 575px){
+  #rootwizard {
+    overflow: hidden;
+    margin: 0 -15px;
+    min-height: 100vh;
+}
+.hero {
+  padding: 20px 0 0 !important;
+}
+.hero-bg{
+  background: none;
+  background-color: #333;
+}
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .hero-bg{
+    background: none;
+    background-color: #333;
+  }
+  .hero {
+      padding: 20px 0;
+  }
+    
+}
+
+@media (max-width: 767px){
+.main.article-header .logo {
+  float: left;
+  width: 240px;
+}
+footer.main nav a {
+  padding: 7px 7px;
+}
+    
 }
 
 @media (min-width: 768px){
