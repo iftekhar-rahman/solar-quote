@@ -1,322 +1,559 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Get a Solar Quote Today - solarquotetoday.co.uk</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
 
-        <title></title>
-        
-        <!--Libraries-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/532d00e5bb.js"></script>
+    
+    <meta name="robots" content="noindex" />
 
-        <!--Plugins-->
-        <link href="css/animate.css" rel="stylesheet">
+</head>
+<body>
 
-        <!--Theme specific styles-->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
-        
-        <!--Core jQuery-->
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
-        <script src="js/jquery-migrate-1.4.1.min.js"></script>
-
-        <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-
-        <!-- header starts -->
-        <header class="header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="/">
-                            <img src="img/logo.svg" alt="Solar Quote Today" class="logo">
-                        </a>
-                    </div>
-                    <div class="col-md-6 header-copy text-right">
-                        <span class="d-none d-md-block">Get Your Free Quote Today</span>
-                    </div>
+    <header class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="/">
+                        <img src="img/logo.svg" alt="Solar Quote Today" class="logo" />
+                    </a>
+                </div>
+                <div class="col-md-6 header-copy">
+                    <span class="d-none d-md-block">Get Your Free Quote Today</span>
                 </div>
             </div>
-        </header>
-        <!-- header ends -->
+        </div>
+    </header>
 
-        <!-- .hero-area starts -->
-        <section class="hero-area hero-bg">
-            <div class="container">
-                <h1>Get a quote today from the UK's leading solar panel suppliers.</h1>
-                <div id="rootwizard" class="form-container">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-electric" role="tab">Electricity</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-homeowner" role="tab">Homeowner</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-solarinstalled" role="tab">Solar Installed</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-listedbuilding" role="tab">Listed Building</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-solarbattery" role="tab">Solar Battery</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-postcode" role="tab">Postcode</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-search" role="tab">Searching</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-address" role="tab">Address</a></li>
+    <section class="hero hero-bg">
+        <div class="container">
+            <h1>Get a quote today from the UK's leading solar panel suppliers.</h1>
+            <div id="rootwizard" class="form-container">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-electric" role="tab">Electricity</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-homeowner" role="tab">Homeowner</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-solarinstalled" role="tab">Solar Installed</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-listedbuilding" role="tab">Listed Building</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-solarbattery" role="tab">Solar Battery</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-postcode" role="tab">Postcode</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-search" role="tab">Searching</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-address" role="tab">Address</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-namephone" role="tab">Name/Phone</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-thanks" role="tab">Thanks</a></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                    <form action="/" id="Test" method="post"><input id="Referrer" name="Referrer" type="hidden" value="https://www.solarquotetoday.co.uk/" /><input id="Link" name="Link" type="hidden" value="" />                <div class="tab-content">
+                        <div class="tab-pane active" id="tab-electric" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <p>What is your average monthly electricity bill?</p>
+                                <div class="form">
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="spend1" name="ElectricitySpend" type="radio" value="0 - £34" />
+                                        <label class="form-check-label" for="spend1">0 - £34</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="spend2" name="ElectricitySpend" type="radio" value="£35 - £49" />
+                                        <label class="form-check-label" for="spend2">£35 - £49</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="spend3" name="ElectricitySpend" type="radio" value="£50 - £69" />
+                                        <label class="form-check-label" for="spend3">£50 - £69</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="spend4" name="ElectricitySpend" type="radio" value="£70+" />
+                                        <label class="form-check-label" for="spend4">£70+</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-homeowner" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <p>Are you a homeowner?</p>
+                                <div class="form">
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="homeowner1" name="Homeowner" type="radio" value="Yes" />
+                                        <label class="form-check-label" for="homeowner1">Yes</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="homeowner2" name="Homeowner" type="radio" value="No" />
+                                        <label class="form-check-label" for="homeowner2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-solarinstalled" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <p>Do you already have solar panels installed?</p>
+                                <div class="form">
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="solarinstalled1" name="SolarInstalled" type="radio" value="Yes" />
+                                        <label class="form-check-label" for="solarinstalled1">Yes</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="solarinstalled2" name="SolarInstalled" type="radio" value="No" />
+                                        <label class="form-check-label" for="solarinstalled2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-listedbuilding" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <p>Do you live in a conservation area or listed building?</p>
+                                <div class="form">
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="listed1" name="ConservationListed" type="radio" value="Yes" />
+                                        <label class="form-check-label" for="listed1">Yes</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="listed2" name="ConservationListed" type="radio" value="No" />
+                                        <label class="form-check-label" for="listed2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-solarbattery" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <p>Are you interested in a solar battery system?</p>
+                                <div class="form">
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="battery1" name="SolarBattery" type="radio" value="Yes" />
+                                        <label class="form-check-label" for="battery1">Yes</label>
+                                    </div>
+                                    <div class="form-check radio abc-radio abc-radio-success">
+                                        <input id="battery2" name="SolarBattery" type="radio" value="No" />
+                                        <label class="form-check-label" for="battery2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-postcode" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <div class="form-group mt-1 mb-5">
+                                    <label for="Postcode">Postcode</label>
+                                    <div class="scrollable-dropdown-menu">
+                                        <input class="form-control data-hj-whitelist" id="Postcode" name="Postcode" placeholder="AB1 2BA" type="text" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-search" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <p class="text-center">Hold on - we're finding an installer in your area that meet your needs</p>
+                                <p class="text-center">
+                                    <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw text-warning"></i>
+                                    <span class="sr-only">Searching...</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-address" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <div class="alert alert-success text-center">
+                                    Good news, we've found an installer for you. Fill in the last few details to start your free no obligation quote.
+                                </div>
+                                <div class="form-group mt-1 mb-5">
+                                    <label for="Address1">First line of address</label>
+                                    <div class="address-placeholder">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-namephone" role="tab">Name/Phone</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-thanks" role="tab">Thanks</a></li>
+                        <div class="tab-pane" id="tab-namephone" role="tabpanel">
+                            <div class="animated slideInRight">
+                                <div class="form-group">
+                                    <label for="Title">Title</label>
+                                    <select class="form-control" id="Title" name="Title">
+                                        <option value="">Select</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Ms">Ms</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Fullname">Full name</label>
+                                    <input class="form-control data-hj-whitelist" id="Fullname" name="Fullname" placeholder="" type="text" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Telephone">Telephone number</label>
+                                    <input class="form-control data-hj-whitelist numeric" id="Telephone" name="Telephone" placeholder="" type="text" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-thanks" role="tabpanel">
+                            <div class="animated slideInRight text-center">
+                                <h3>Thank you for your submission!</h3>
+                                <p>What happens next?</p>
+                                <p>You have been matched with a trusted Solar advisor from one the following companies Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.</p>
+                                <p>An expert will now contact you shortly via telephone to discuss your individual needs and concerns, and provide you with tailored quote.</p>
+                                <p><i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a  data-toggle="modal" data-target="#exampleModalLong" href="/terms-and-conditions">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>            
+                <div id="messageBox1" class="alert alert-danger" style="display: none; position: inherit;">
+                    <ul>
                     </ul>
-        
-                    <div class="progress tab-progress">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="actions">
+                    <a href="#" class="btn btn-success mb-3">
+                        Compare Prices
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </a>
+                    <p id="consent" class="mt-5 mb-3 text-muted" style="font-size: 11px; display: none;">
+                        Your Privacy is important to us. By submitting this form, you consent to Lead Insight Ltd and one of the following companies,
+                        Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.
+                        contacting you by Telephone, Email and/or Post with details of solar panel installation and quotes for such products, and/or to confirm your product requirements.
+                        You have certain rights in relation to your personal data including the right to direct marketing.
+                    </p>
+                    <small><a href="#" class="previous">Previous</a></small>
+                    <div class="secure">
+                        <i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a  data-toggle="modal" data-target="#exampleModalLong" href="#" class="js-privacy-modal">Privacy Policy</a>
                     </div>
-        
-                    <form action="/" id="Test" method="post"><input id="Referrer" name="Referrer" type="hidden" value="https://www.solarquotetoday.co.uk/" /><input id="Link" name="Link" type="hidden" value="" />               
-                        <div class="tab-content" id="step-form">
-                            <div class="tab-pane active" id="tab-electric" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <p>What is your average monthly electricity bill?</p>
-                                    <div class="form">
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="spend1" name="ElectricitySpend" type="radio" value="0 - £34" checked/>
-                                            <label class="form-check-label" for="spend1">0 - £34</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="spend2" name="ElectricitySpend" type="radio" value="£35 - £49" />
-                                            <label class="form-check-label" for="spend2">£35 - £49</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="spend3" name="ElectricitySpend" type="radio" value="£50 - £69" />
-                                            <label class="form-check-label" for="spend3">£50 - £69</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="spend4" name="ElectricitySpend" type="radio" value="£70+" />
-                                            <label class="form-check-label" for="spend4">£70+</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-homeowner" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <p>Are you a homeowner?</p>
-                                    <div class="form">
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="homeowner1" name="Homeowner" type="radio" value="Yes" />
-                                            <label class="form-check-label" for="homeowner1">Yes</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="homeowner2" name="Homeowner" type="radio" value="No" />
-                                            <label class="form-check-label" for="homeowner2">No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-solarinstalled" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <p>Do you already have solar panels installed?</p>
-                                    <div class="form">
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="solarinstalled1" name="SolarInstalled" type="radio" value="Yes" />
-                                            <label class="form-check-label" for="solarinstalled1">Yes</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="solarinstalled2" name="SolarInstalled" type="radio" value="No" />
-                                            <label class="form-check-label" for="solarinstalled2">No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-listedbuilding" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <p>Do you live in a conservation area or listed building?</p>
-                                    <div class="form">
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="listed1" name="ConservationListed" type="radio" value="Yes" />
-                                            <label class="form-check-label" for="listed1">Yes</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="listed2" name="ConservationListed" type="radio" value="No" />
-                                            <label class="form-check-label" for="listed2">No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-solarbattery" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <p>Are you interested in a solar battery system?</p>
-                                    <div class="form">
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="battery1" name="SolarBattery" type="radio" value="Yes" />
-                                            <label class="form-check-label" for="battery1">Yes</label>
-                                        </div>
-                                        <div class="form-check radio abc-radio abc-radio-success">
-                                            <input id="battery2" name="SolarBattery" type="radio" value="No" />
-                                            <label class="form-check-label" for="battery2">No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-postcode" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <div class="form-group mt-1 mb-5">
-                                        <label for="Postcode">Postcode</label>
-                                        <div class="scrollable-dropdown-menu">
-                                            <input class="form-control data-hj-whitelist" id="Postcode" name="Postcode" placeholder="AB1 2BA" type="text" value="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-search" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <p class="text-center">Hold on - we're finding an installer in your area that meet your needs</p>
-                                    <p class="text-center">
-                                        <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw text-warning"></i>
-                                        <span class="sr-only">Searching...</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-address" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <div class="alert alert-success text-center">
-                                        Good news, we've found an installer for you. Fill in the last few details to start your free no obligation quote.
-                                    </div>
-                                    <div class="form-group mt-1 mb-5">
-                                        <label for="Address1">First line of address</label>
-                                        <div class="address-placeholder">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tab-pane" id="tab-namephone" role="tabpanel">
-                                <div class="animated slideInRight">
-                                    <div class="form-group">
-                                        <label for="Title">Title</label>
-                                        <select class="form-control" id="Title" name="Title">
-                                            <option value="">Select</option>
-                                            <option value="Mr">Mr</option>
-                                            <option value="Mrs">Mrs</option>
-                                            <option value="Miss">Miss</option>
-                                            <option value="Ms">Ms</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Fullname">Full name</label>
-                                        <input class="form-control data-hj-whitelist" id="Fullname" name="Fullname" placeholder="" type="text" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Telephone">Telephone number</label>
-                                        <input class="form-control data-hj-whitelist numeric" id="Telephone" name="Telephone" placeholder="" type="text" value="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-thanks" role="tabpanel">
-                                <div class="animated slideInRight text-center">
-                                    <h3>Thank you for your submission!</h3>
-                                    <p>What happens next?</p>
-                                    <p>You have been matched with a trusted Solar advisor from one the following companies Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.</p>
-                                    <p>An expert will now contact you shortly via telephone to discuss your individual needs and concerns, and provide you with tailored quote.</p>
-                                    <p><i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a href="/terms-and-conditions">Privacy Policy</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>            
-                    <div id="messageBox1" class="alert alert-danger" style="display: none; position: inherit;">
-                        <ul></ul>
-                    </div>
-        
-                    <div class="actions">
-                        <a href="#" class="btn btn-success mb-3 next-btn">
-                            Compare Prices
-                            <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        </a>
-                        <p id="consent" class="mt-5 mb-3 text-muted" style="font-size: 11px; display: none;">
-                            Your Privacy is important to us. By submitting this form, you consent to Lead Insight Ltd and one of the following companies,
-                            Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.
-                            contacting you by Telephone, Email and/or Post with details of solar panel installation and quotes for such products, and/or to confirm your product requirements.
-                            You have certain rights in relation to your personal data including the right to direct marketing.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pods">
+        <div class="container">
+            <h2>The Benefits of Solar Panels</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div><i class="fa fa-line-chart fa-5x"></i></div>
+                    <h3>Energy costs are constantly rising</h3>
+                    <p>The UK's energy bills rising at fastest rate since 2014.</p>
+                </div>
+                <div class="col-md-4">
+                    <div><i class="fa fa-gbp fa-5x"></i></div>
+                    <h3>Money Saving</h3>
+                    <p>Store the energy to use when needed and get paid for any unused energy to maximize savings.</p>
+                </div>
+                <div class="col-md-4">
+                    <div><i class="fa fa-thumbs-o-up fa-5x"></i></div>
+                    <h3>Good for the enviroment</h3>
+                    <p>Fit and forget with a low cost and high carbon benefit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta cta-bg">
+        <div class="container">
+            <h3>It’s quick and simple. Our quotes are free and you’re under no obligation.</h3>
+            <a href="#rootwizard" class="btn">Start Quote Now</a>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Terms, Conditions and Privacy Statement</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <h4>INTRODUCTION</h4>
+                        <p>Lead Insight Ltd. takes the confidentiality of personal data seriously. Please contact us if you have any questions or comments on this privacy policy.</p>
+                        <p>The Company's privacy policy sets out the ways Lead Insight Ltd processes personal data. This privacy policy only relates to personal data collected by Lead Insight Ltd via the websites it owns and operates. Any personal data collected by Lead insight is used in accordance with data protection legislation.</p>
+                        <p>
+                            Lead Insight Ltd<br>
+                            The Square<br>
+                            Basing View<br>
+                            Basingstoke<br>
+                            RG21 4EB<br>
                         </p>
-                        <small><span class="previous">Previous</span></small>
-                        <div class="secure">
-                            <i class="fa fa-lock" aria-hidden="true"></i> Your information is protected. <a href="#" class="js-privacy-modal">Privacy Policy</a>
-                        </div>
-                    </div>
+                        
+                        <h4>CONTENTS</h4>
+                        <ul>
+                            <li>About our site</li>
+                            <li>How our site works</li>
+                            <li>About us</li>
+                            <li>What we don’t do with your data</li>
+                            <li>What data we collect, and how</li>
+                            <li>How we use your data</li>
+                            <li>Cookies</li>
+                            <li>Transferring your data</li>
+                            <li>Storing your data</li>
+                            <li>Legal grounds</li>
+                            <li>Your rights</li>
+                            <li>Contacting us</li>
+                            <li>Changes to this notice</li>
+                        </ul>
+                        
+                        <h4>ABOUT OUR SITE</h4>
+                        <p>Our site enables people to request a quote or information for the product or service shown or selected on this site (the "Product").</p>
+                        <p>The service that our site provides is to connect people who are looking to purchase the Product with relevant providers of the Product ("Service Providers").</p>
+                        
+                        <h4>HOW OUR SITE WORKS</h4>
+                        <p>If you’d like to request and receive quotes or information for the Product ("Quotes"), please complete and submit our webform.</p>
+                        <p>Once we’ve received your request, we’ll connect you with one or more relevant Service Providers. We’ll tell the Service Providers who you are, and your Product requirements, and they’ll then contact you directly with your requested Quotes or product information</p>
+                        <p>We have a really clear consent statement as displayed on all web forms. This statement sets out the Service Providers that will contact you.</p>
+                        <p>We only work with Service Providers once a legal contract in place. This is to ensure that they respect your data and rights by keeping your data secure and confidential, limiting their use of your data (i.e. to providing you with the requested Quotes), and not sharing your data with anyone else.</p>
+                        
+                        
+                        <h4>ABOUT US</h4>
+                        <p>Lead Insight Ltd ("LI ltd", "we", "us", "our") is a company registered in England and Wales company number: 09368839, whose registered office address is at . The Square, Basing View, Basingstoke, Hants, RG21 4EB</p>
+                        <p>For the purposes of the General Data Protection Regulation (the "GDPR"), Lead Insight Ltd is the controller in relation to your data. We are registered as a controller with the UK Information Commissioner’s Office (ICO) under registration number ZA176602. You can confirm our registration here: www.ico.org.uk</p>
+                        <p>For Reference to Claims Regulation Only</p>
+                        <p>Lead Insight Ltd, Email: info@leadinsight.co.uk telephone 0333 305 2324 (Local Rate Number) Registered in England and Wales: The Square, Basing View, Basingstoke, Hants, RG21 4EB. Company Registration Number 09368839. Lead Insight Ltd is regulated by the Claims Management Regulator in respect of regulated claims management activities; that registration is recorded on the Claims Regulation website www.gov.uk/moj/cmr (Authorisation No. CRM40999).</p>
+                        
+                        <h4>WHAT WE DON’T DO WITH YOUR DATA</h4>
+                        <p>Before confirming what data we collect, and why, please below a list of things we don’t do with it, unless clearly set out and explained in this Privacy Policy.</p>
+                        <ul>
+                            <li>We don’t share it with anyone else (other than the companies listed on the web form)</li>
+                            <li>We don’t use it for any purpose (including retargeting, commingling across multiple advertisers’ campaigns or allowing piggybacking or redirecting with tags), except on an aggregate and anonymous basis, and only to assess the performance and effectiveness of our advertising campaigns.</li>
+                            <li>We don't use it to build, append to, edit, influence or augment user profiles, including profiles associated with any mobile device identifier or other unique identifiers that identify any particular user, browser, computer or device.</li>
+                            <li>We don’t transfer it (including any anonymous, aggregate or derived data) to any advertising network, advert exchange, data broker, or other advertising or monetisation-related service.</li>
+                        </ul>
+                        
+                        <h4>WHAT DATA WE COLLECT, AND HOW</h4>
+                        <p>If you complete our webform in order to request Quotes or product information, it will ask you for your contact details, such as list below,</p>
+                        <ul>
+                            <li>Your name,</li>
+                            <li>email address,</li>
+                            <li>telephone number,</li>
+                            <li>postal address,</li>
+                            <li>and/or postal code.</li>    
+                        </ul>
+                        <p>Our webform will also ask for information regarding your product requirements (where relevant).</p>
+                        <p>We may sporadically change our webforms, as a result of this they may ask you for other information. We will always make it clear in the webform what information we’re requesting, and we only request information that is relevant to your request, and the service that we’re providing.</p>
+                        <p>We also store and share Internet Protocol (IP) addresses, as explained below. Every computer or device has an IP address – a unique number – which enables it to communicate with other computers and devices over the Internet.</p>
+                        <p>We may monitor and/or record these calls for the purposes of quality control and staff training. Also, occasionally, we may need to provide Service Providers with limited access to such recordings in order to resolve disputes.</p>
+                        
+                        
+                        
+                        
+                        <h4>HOW WE USE YOUR DATA</h4>
+                        <p>Solar Installers we share your information with</p>
+                        
+                        <p>Project Solar UK Ltd, which is registered in England and Wales. Registered number 07673744. Registered office: Unit E3-E5 Sovereign Business Park, Hawkins Lane, Burton-On-Trent, Staffordshire, DE14 1PD , ICO registration number Z3148552</p>
+                        <p>Project Better Energy Ltd T/A Zanussi Solar, which is registered in England and Wales. Registered number 07923909. Registered office: Witan Gate House, 500 - 600 Witan Gate West, Milton Keynes, Buckinghamshire, MK9 1SH, ICO registration number ZA119114</p>
+                        
+                        <p>Solar Gateway is a trading name of Solar Gateway Ltd, which is registered in England and Wales. Registered number 11110825. Registered office: 23 Dartford Road, March, PE15 8AN. Solar Gateway Ltd is a member of the Home Insulation &amp; Energy Systems Scheme (HIES) which is backed up by the Trading Standards Institute. Our registration number is SGA/A/0464. Further information can be found at www.hiesscheme.org.uk. We are registered with the Information Commissioner under the Data Protection Act 2018. ICO registration number ZA497853 (Tier 1).</p>
+                        <p>Solarplants Limited, which is registered in England and Wales. Registered number 07550834. Registered office: Unit 11 Mardon Park, Baglan Energy Park, Baglan, Port Talbot, SA12 7AX , ICO registration number ZA021535.</p>
+                        <p>Wiley Accessories Ltd T/A Envision Energy, which is registered in England and Wales. Registered number 01087243. Registered office: St Pegs Mill, Thornhill Beck Lane, Brighouse, HD6 4AH. ICO registration number ZA512289.</p>
+                        
+                        <p>We use your data (described above) in the following ways.</p>
+                        
+                        <h4>TO CONNECT YOU WITH RELEVANT SERVICE PROVIDERS</h4>
+                        <p>As explained above, if you submit our webform, we’ll pass your request to one or more relevant Service Providers (named on the consent statement). We will do this in a secure way. For example, using HTTP Secure (HTTPS), which means the data is encrypted. The Service Providers then contact you directly with your quotes. They may contact you by telephone, text/SMS or email.</p>
+                        <p>Before we pass your request to any Service Providers, our service may involve an element of automated decision-making. Our technology platform may automatically assess your Product requirements and pass your request to such Service Providers that would like to receive requests for Quotes at the time your request is made.</p>
+                        <p>We store IP addresses in order to stop unwanted traffic (i.e. spam) to our site. For example, if we become aware that spam is coming from a particular IP address (i.e. computer or location), we can block that IP address. From time to time, we also share IP addresses with Service Providers to enable Service Providers to verify that requests for Quotes have come from a particular country.</p>
+                        <p>You will always be given an opportunity to opt out of such messages before we send them, and we will not send such messages if you have opted out.</p>
+                        
+                        <h4>RECEIVING DATA FROM SERVICE PROVIDERS</h4>
+                        <p>From time to time, Service Providers may return data to us. They may do this if they have a query regarding a request for Quotes that we have sent to them in order to enable us to resolve the query. They may also return data to us, together with confirmation on whether or not a product has been purchased, in order to enable us to improve our marketing. We may also use such data to create custom and lookalike/similar audiences, as explained above.</p>
+                        
+                        <h4>WORKING WITH SUPPLIERS</h4>
+                        <p>We work with a number of suppliers, who process data on our behalf. These include, email service providers and telephone number validation services. We have appropriate contracts in place with such suppliers to ensure the protection and confidentiality of data.</p>
+                        
+                        <h4>COOKIES</h4>
+                        <p>Cookies are small text files that are placed on your computer by websites that you visit. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site. At the bottom of this policy, we have included a table, setting out what cookies we use, and the purposes for which we use them.</p>
+                        <p>Most web browsers allow some control of most cookies through the browser settings. To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit www.aboutcookies.org or www.allaboutcookies.org.</p>
+                        <p>To opt out of being tracked by Google Analytics across all websites visit <a href="http://tools.google.com/dlpage/gaoptout">http://tools.google.com/dlpage/gaoptout</a>.</p>
+                        
+                        <h4>STORING YOUR DATA</h4>
+                        <p>We have a data retention policy, which clearly sets out how long we keep data for, and for what reasons.</p>
+                        <p>We will keep your data only for as long as is necessary to fulfil the purpose/s for which it was collected in the first place, i.e. as set out in this notice.</p>
+                        <p>For example:</p>
+                        <ul>
+                            <li>We will keep your request for Quotes for 6 months after you make the request to enable us to resolve any queries from Service Providers, should they arise.</li>
+                            <li>If you haven’t opted out of receiving marketing from us, we will keep your details, and send you emails, until such time as you don’t engage with our emails for a period of 6 consecutive months.</li>
+                        </ul>
+                        <p>Following the periods set out above, we will not use the data, save that we will hash/anonymise the same, and retain it for a further 3 years for compliance purposes.</p>
+                        
+                        <h4>LEGAL GROUNDS</h4>
+                        <p>This notice sets out (above) how we use your data. Under the GDPR, controllers must have a valid lawful basis for each processing activity that they undertake. This section sets out our lawful basis for each activity.</p>
+                        
+                        <table class="table table-striped table-bordered">
+                            <tbody><tr>
+                                <th>Activity</th>
+                                <th>Lawful Basis under the GDPR</th>
+                                <th>Your Rights</th>
+                            </tr>
+                            <tr>
+                                <td>To connect you with relevant Service Providers</td>
+                                <td>Consent</td>
+                                <td>To withdraw your consent, as explained below</td>
+                            </tr>
+                            <tr>
+                                <td>The automated decision-making explained above</td>
+                                <td>Legitimate interests</td>
+                                <td>You have the right to object to processing based on legitimate interests</td>
+                            </tr>
+                            <tr>
+                                <td>Using and sharing IP addresses</td>
+                                <td>Legitimate interests</td>
+                                <td>You have the right to object to processing based on legitimate interests</td>
+                            </tr>
+                            <tr>
+                                <td>Receiving data from Service Providers</td>
+                                <td>Legitimate interests</td>
+                                <td>You have the right to object to processing based on legitimate interests</td>
+                            </tr>
+                        </tbody></table>
+                        <p>Under the Privacy and Electronic Communications (EC Directive) Regulations 2003 (PECR), we send such emails on the basis of the existing customer (soft opt-in) exemption.</p>
+                        <p>In each case where we have identified legitimate interests as the legal basis for our processing, we have conducted a legitimate interests assessment.</p>
+                        
+                        <h4>YOUR RIGHTS</h4>
+                        <p>Under the GDPR, you have a number of rights. In relation to our site, and the service that we provide, those rights are set out in the table above. We further explain these rights, and your other rights, below.</p>
+                        <h5>RIGHT OF ACCESS</h5>
+                        <p>You have the right at any time to ask us for a copy of the personal information that we hold about you, and to check that we are lawfully processing it.</p>
+                        <h5>RIGHT OF RECTIFICATION</h5>
+                        <p>If personal information that we hold about you is not accurate or is out of date and requires amendment or correction you have a right to have the data rectified or completed.</p>
+                        <h5>RIGHT OF ERASURE</h5>
+                        <p>In certain circumstances, you have the right to request that personal information we hold about you is erased (e.g. if the information is no longer necessary for the purposes for which it was collected or processed).</p>
+                        <h5>RIGHT TO OBJECT TO OR RESTRICT PROCESSING</h5>
+                        <p>In certain circumstances, you have the right to object to our processing of your personal information. For example, if we are processing your information on the basis of our legitimate interests, and there are no compelling legitimate grounds for our processing which override your rights and interests.</p>
+                        <h5>RIGHT OF DATA PORTABILITY</h5>
+                        <p>In certain instances, you have a right to receive any personal information that we hold about you in a structured, commonly used and machine-readable format.</p>
+                        
+                        <h4>RIGHT TO WITHDRAW CONSENT</h4>
+                        <p>In the limited circumstances where you may have provided your consent to the collection, processing and transfer of your personal information for a specific purpose, you have the right to withdraw your consent for that specific processing at any time. You can exercise this right by contacting us in any of below ways.</p>
+                        <p>Email - info@leadinsight.co.uk</p>
+                        <p>Phone - 0333 305 2324</p>
+                        <p>In Writing - Lead Insight Ltd, The Square, Basing View, Basingstoke, RG21 4EB.</p>
+                        <h5>EXERCISING YOUR RIGHTS</h5>
+                        <p>If you wish to exercise any of your other rights under the GDPR, please email us at info@leadinsight.co.uk . Alternatively, you can write to us at the address set out above, or inform us if you speak with us on the phone.</p>
+                        <p>Our lead supervisory authority for the processing set out in this notice is the UK Information Commissioner’s Office (ICO). If you are unhappy with how we have processed your data, you have the right to make a complaint to the ICO.</p>
+                        
+                        <h4>CONTACTING US</h4>
+                        <p>If you have any questions regarding this notice, or any questions relating to data protection or privacy, you can contact us at info@leadinsight.co.uk</p>
+                        <p>Alternatively, you can write to us at the address set out above.</p>
+                        
+                        <h4>CHANGES TO THIS NOTICE</h4>
+                        <p>From time to time, we may update this notice.</p>
+                        
+                        <p><small class="text-muted mb-3">Last reviewed: 25/02/2019</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-        </section>
-        <!-- .hero-area ends -->
+        </div>
+    </div>
 
-        <!-- .pods-area starts -->
-        <section class="pods-area">
-            <div class="container">
-                <h2 class="text-center">The Benefits of Solar Panels</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-pod">
-                            <div class="pod-icon"><i class="fa fa-line-chart fa-5x"></i></div>
-                            <h3>Energy costs are constantly rising</h3>
-                            <p>The UK's energy bills rising at fastest rate since 2014.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-pod">
-                            <div class="pod-icon"><i class="fa fa-gbp fa-5x"></i></div>
-                            <h3>Money Saving</h3>
-                            <p>Store the energy to use when needed and get paid for any unused energy to maximize savings.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-pod">
-                            <div class="pod-icon"><i class="fa fa-thumbs-o-up fa-5x"></i></div>
-                            <h3>Good for the enviroment</h3>
-                            <p>Fit and forget with a low cost and high carbon benefit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- .pods-area ends -->
 
-        <!-- .cta starts -->
-        <section class="cta-area" style="background-image: url(img/timer.jpg)">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>It’s quick and simple. Our quotes are free and you’re under no obligation.</h3>
-                        <a href="#rootwizard" class="boxed-btn">Start Quote Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- .cta ends -->
+    <footer class="main">
+        <div class="container">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/terms-and-conditions">Terms, Conditions and Privacy</a>
+            </nav>
+            <small>
+                By submitting your details onto the site you will be contacted by telephone, email, sms or post by one of the following partners;<br />
+                Lead Insight Ltd, Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.
+                <br /><br />
+                Solar Quote Today is a trading style of Lead Insight Ltd, trading at The Square (G11), Basing View, Basingstoke, Hampshire, RG21 4EB. Email:
+                info@leadinsight.co.uk. Company Registration Number 09368839.
+            </small>
+        </div>
+    </footer>
 
-        <!-- .footer-area starts -->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <nav>
-                            <a href="/">Home</a>
-                            <a href="/terms-and-conditions">Terms, Conditions and Privacy</a>
-                        </nav>
-                        <small>
-                            By submitting your details onto the site you will be contacted by telephone, email, sms or post by one of the following partners;<br />
-                            Lead Insight Ltd, Project Solar UK Ltd, Project Better Energy Ltd T/A Zanussi Solar, Wiley Accessories Ltd T/A Envision Energy, Evergen Systems Ltd or Solar Gateway.
-                            <br /><br />
-                            Solar Quote Today is a trading style of Lead Insight Ltd, trading at The Square (G11), Basing View, Basingstoke, Hampshire, RG21 4EB. Email:
-                            info@leadinsight.co.uk. Company Registration Number 09368839.
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- .footer-area ends -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="js/global-landing.js"></script>
 
-        <!--Libraries-->
-        <script src="js/bootstrap.bundle.min.js"></script>       
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107124908-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <!--Plugins-->
-        <!-- <script src="js/owl.carousel.min.js"></script> -->
+        gtag('config', 'UA-107124908-4');
+    </script>
+    
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 881647, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+	
+	<script type="text/javascript">
+	  var _paq = window._paq || [];
+	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="https://leadinsight.matomo.cloud/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/leadinsight.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+    
+    <script type='text/javascript'>
+        window._tfa = window._tfa || [];
+        window._tfa.push({ notify: 'event', name: 'page_view', id: 1124194 });
+        !function (t, f, a, x) {
+            if (!document.getElementById(x)) {
+                t.async = 1; t.src = a; t.id = x; f.parentNode.insertBefore(t, f);
+            }
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/unip/1124194/tfa.js',
+            'tb_tfa_script');
+    </script>
+    <noscript>
+        <img src='//trc.taboola.com/1124194/log/3/unip?en=page_view' width='0' height='0' style='display:none' />
+    </noscript>
+     
+    <script data-obct type="text/javascript">
+        !function (_window, _document) {
+            var OB_ADV_ID = '00e2c15f174af2df4e568aa90ebeec777e';
+            if (_window.obApi) { var toArray = function (object) { return Object.prototype.toString.call(object) === '[object Array]' ? object : [object]; }; _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID)); return; }
+            var api = _window.obApi = function () { api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments); }; api.version = '1.1'; api.loaded = true; api.marketerId = OB_ADV_ID; api.queue = []; var tag = _document.createElement('script'); tag.async = true; tag.src = '//amplify.outbrain.com/cp/obtp.js'; tag.type = 'text/javascript'; var script = _document.getElementsByTagName('script')[0]; script.parentNode.insertBefore(tag, script);
+        }(window, document);
+        obApi('track', 'PAGE_VIEW');
+    </script>
+    
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '458373001586136');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=458373001586136&ev=PageView&noscript=1" />
+    </noscript>
 
-        <!--Active & Custom JS-->
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+    
+</body>
 </html>
